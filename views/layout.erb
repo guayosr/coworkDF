@@ -1,0 +1,78 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<title>coworkDF - <%= @title %></title>
+		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="topbar">
+		      <div class="fill">
+		        <div class="container">
+		          <a class="brand" href="/">coworkDF</a>
+		          <ul class="nav">
+		            <li <%= "class='active'" if @title=="¿Que es?" %>>
+						<a href="/quees">¿Que es?</a>
+					</li>
+		            <li <%= "class='active'" if @title=="¿Como ayudo?" %>>
+						<a href="/ayuda">¿Como ayudo?</a>
+					</li>
+		            <li <%= "class='active'" if @title=="Avance" %>>
+						<a href="/avance">Avance</a>
+					</li>
+					<li <%= "class='active'" if @title=="Miembros" %>>
+						<a href="/miembros">Miembros</a>
+					</li>
+					<li <%= "class='active'" if @title=="Blog" %>>
+						<a href="/blog">Blog</a>
+					</li>
+		          </ul>
+		        </div>
+		      </div>
+		</div>
+
+		    <div class="container">
+			  <div class="content">
+				
+					<div class="row"> <!-- content -->
+						<div class="span12">
+						
+							<%= yield %>
+					
+						</div> <!-- span12 -->
+				
+			  		<div class="span4">
+						<h3>Suscríbete</h3>
+						<form class="form-stacked">
+							<fieldset>
+								<div class="clearfix"><input class="span3" id="" name="" type="text" placeholder="e-mail"></div>
+							</fieldset>
+							<button class="btn">Default</button>
+						</form>
+
+						<h3>Eventos</h3>
+						<dl>
+							<dt>Miércoles, X de Septiembre</dt>
+							<dd>
+								<p>
+									Coworking Wednesdays <br/>
+									Café Péndulo <br/>
+									Amsterdam 400 <br/>
+									Colonia Condesa <br/>
+								</p>
+							</dd>
+						</dl>
+					</div> <!-- span4 -->
+				</div> <!-- row -->
+
+			
+			
+			  </div> <!-- content -->	
+			  <footer>
+		        <p>&copy; coworkDF 2011</p>
+		      </footer>
+
+		    </div> <!-- /container -->		
+	</body>
+</html>
