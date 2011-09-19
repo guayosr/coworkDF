@@ -117,27 +117,29 @@ is essential to making the progress bars work.
 
 /* code to stripe the bars */
 .progress-bar:after { 
-  content: '|||||||||||||';
+  content: '';
   display: block;
   position: absolute;
+  text-align:right;
   width: 200px;
   height: 24px;
   overflow: hidden;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
-  transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
-  font:bold 120px/80px sans-serif;
-  letter-spacing: -6px;
+  font-size: 20px;
   color: #000;
-  opacity: 0.06;
+  opacity: 0.8;
 }
 
 /* code for the colors */
 .blue:before { 
+  content: '55/110 miembros';
+  font-weight:bold;
+  font-family: inherit;
+  padding: 0 10px 0 0;
+  text-align:right;
+  vertical-align:middle;
   background: #099;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#099), to(#006A6B));
   background: -moz-linear-gradient(top, #099, #006A6B);
