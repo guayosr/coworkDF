@@ -10,6 +10,28 @@ body {
         text-align: center; /* center align it with the container */
 }
 
+h1 {
+	font-variant:small-caps;
+}
+
+/* Utilities */
+
+.float-right {
+	float:right;
+}
+
+.float-left {
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+.first-row {
+	margin-top:50px;
+}
+
 /* The white background content wrapper */
 .content {
   background-color: #fff;
@@ -31,7 +53,7 @@ body {
 }
 
 /* Give a quick and non-cross-browser friendly divider */
-.content .span4 {
+.content .sidebar {
   margin-left: 0;
   padding-left: 19px;
   border-left: 1px solid #eee;
@@ -55,6 +77,24 @@ body {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
+/* Que Es */
+
+.row-quees {
+	margin-top:20px;
+}
+
+/* Avance */
+
+#unete {
+	font-size:20px;
+	line-height:50px;
+	width:180px;
+	height:50px;
+	text-align:center;
+}
+
+/* Miembros */
+
 .member {
 	margin-left: 30px;
 } 
@@ -63,9 +103,30 @@ body {
 	flaot:left;
 }
 
+/* Landing  */
+
 .hero-unit {
 	margin-right: 20px;
 }
+
+h1#title {
+	font-variant:normal;
+}
+
+/* Unete*/
+
+#dineromail{
+	width:250px;
+	height:83px;
+}
+
+
+/* Side Bar */
+
+.mail-send{
+	margin-right:40px;
+}
+
 
 /* Progress Bars */
 
@@ -77,11 +138,12 @@ is essential to making the progress bars work.
 */
 
 /* progress bar base */
-.progress-bar { 
+.progress-bar {
+  margin-top:25px; 
   width: 680px;
   height: 24px;
   padding: 4px;
-  background-color: #404040;
+  background-color: #fff;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -98,7 +160,7 @@ is essential to making the progress bars work.
   content: '';
   display: block;
   position: absolute;
-  width: 200px;
+  width: 195px;
   height: 24px;
   background: #999;
   border-radius: 12px;
@@ -134,13 +196,15 @@ is essential to making the progress bars work.
 
 /* code for the colors */
 .blue:before { 
-  content: '55/110 miembros';
+  content: '23/80 miembros';
+  line-height:24px;
   font-weight:bold;
   font-family: inherit;
+  color:#FFF;
   padding: 0 10px 0 0;
   text-align:right;
   vertical-align:middle;
   background: #099;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#099), to(#006A6B));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#404040), to(#404040));
   background: -moz-linear-gradient(top, #099, #006A6B);
 }

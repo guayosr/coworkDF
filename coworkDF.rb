@@ -7,12 +7,12 @@ get '/' do
 end
 
 get '/quees' do
-	#@title = "¿Que es?"
+	@title = "Acerca de"
 	erb :quees
 end
 
 get '/ayuda' do
-	#@title = "¿Como ayudo?"
+	@title = "Ayuda"
 	erb :ayuda
 end
 
@@ -24,6 +24,11 @@ end
 get '/miembros' do
 	@title = "Miembros"
 	erb :miembros
+end
+
+get '/unete' do
+  @title = "Unete"
+  erb :unete
 end
 
 get '/blog' do
