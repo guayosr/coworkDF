@@ -2,9 +2,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>coworkDF - <%= @title %></title>
+		
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script src="js/bootstrap-modal.js"></script>
 	</head>
 	<body>
 		<div class="topbar">
@@ -25,7 +31,7 @@
 						<a href="/miembros">Miembros</a>
 					</li>
 					<li <%= "class='active'" if @title=="Blog" %>>
-						<a href="/blog">Blog</a>
+						<a href="http://coworkDF.tumblr.com">Blog</a>
 					</li>
 		          </ul>
 		        </div>
