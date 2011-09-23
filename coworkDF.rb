@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['coworkDF', 'fondoperdido']
+end
+
 get '/' do
 	@title = "Home"
 	erb :index
@@ -29,6 +33,11 @@ end
 get '/miembros' do
 	@title = "Miembros"
 	erb :miembros
+end
+
+get '/miembros2' do
+	@title = "Miembros"
+	erb :miembros2
 end
 
 get '/unete' do

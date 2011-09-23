@@ -127,14 +127,11 @@ h1#title {
 	margin-right:40px;
 }
 
-#call-to-action {
-
+/* Top Bar */
+.social-media {
+	float:right;
+	margin:4px 10px 0 0;
 }
-
-div#call-to-action h3 {
-
-}
-
 
 /* Progress Bars */
 
