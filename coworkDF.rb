@@ -16,6 +16,11 @@ get '/ayuda' do
 	erb :ayuda
 end
 
+get '/beneficios' do
+	@title = "Beneficios"
+	erb :beneficios
+end
+
 get '/avance' do
 	@title = "Avance"
 	erb :avance
@@ -35,3 +40,10 @@ get '/blog' do
 	@title = "Blog"
 	erb :blog	
 end
+
+get '/evento' do
+	@title = "Evento"
+	erb :evento	
+end
+
+

@@ -24,6 +24,9 @@
 		            <li <%= "class='active'" if @title=="¿Como ayudo?" %>>
 						<a href="/ayuda">¿Como ayudo?</a>
 					</li>
+					<li <%= "class='active'" if @title=="Beneficios" %>>
+						<a href="/beneficios">Beneficios</a>
+					</li>
 		            <li <%= "class='active'" if @title=="Avance" %>>
 						<a href="/avance">Avance</a>
 					</li>
@@ -48,29 +51,38 @@
 					
 						</div> <!-- span12 -->
 				
-			  		<div class="sidebar span4">
-						<h3>Suscríbete</h3>
-							<%= erb :lista_correos %>
-						<h3>Eventos</h3>
-						<dl>
-							<dt>Miércoles, X de Septiembre</dt>
-							<dd>
-								<p>
-									Coworking Wednesdays <br/>
-									Café Péndulo <br/>
-									Amsterdam 400 <br/>
-									Colonia Condesa <br/>
-								</p>
-							</dd>
-						</dl>
-					</div> <!-- span4 -->
-				</div> <!-- row -->
+			  			<div class="sidebar span4">
+							<h3>Suscríbete</h3>
+								<%= erb :lista_correos %>
+							<h3>Siguientes Eventos</h3>
+							<dl>
+								<dt><a href='/evento'>coworkDAY</a></dt>
+								<dd>
+									<p>
+										Miércoles, X de Septiembre<br/>
+										Café Péndulo <br/>
+										Amsterdam 400 <br/>
+										Colonia Condesa <br/>
+									</p>
+								</dd>
+								<dt><a href='/evento'>Lean Startup Meetup</a></dt>
+								<dd>
+									<p>
+										Miércoles, X de Septiembre<br/>
+										Café Péndulo <br/>
+										Amsterdam 400 <br/>
+										Colonia Condesa <br/>
+									</p>
+								</dd>
+							</dl>
+						</div> <!-- span4 -->
+					</div> <!-- row -->
 
 			
 			
 			  </div> <!-- content -->	
 			  <footer>
-		        <p>&copy; coworkDF 2011</p>
+		        <p>&copy; coworkDF 2011 | info@coworkdf.com</p>
 		      </footer>
 
 		    </div> <!-- /container -->		
