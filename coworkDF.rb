@@ -35,11 +35,6 @@ get '/miembros' do
 	erb :miembros
 end
 
-get '/miembros2' do
-	@title = "Miembros"
-	erb :miembros2
-end
-
 get '/unete' do
   @title = "Unete"
   erb :unete

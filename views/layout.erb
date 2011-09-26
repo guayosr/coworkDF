@@ -1,7 +1,7 @@
 <!doctype html>
 	<head>
 		<meta charset="utf-8">
-		<title>coworkDF - <%= @title %></title>
+		<title>Launchpad - <%= @title %></title>
 		
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
@@ -11,12 +11,17 @@
 		<!-- Javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<script src="js/bootstrap-modal.js"></script>
+		<script src="js/bootstrap-twipsy.js"></script>
+		<script src="js/bootstrap-popover.js"></script>
+		
+		
+		
 	</head>
 	<body>
 		<div class="topbar">
 		      <div class="fill">
 		        <div class="container">
-		          <a class="brand" href="/">coworkDF</a>
+		          <a class="brand" href="/">Launchpad</a>
 		          <ul class="nav">
 		            <li <%= "class='active'" if @title=="¿Que es?" %>>
 						<a href="/quees">¿Que es?</a>
@@ -26,9 +31,6 @@
 					</li>
 					<li <%= "class='active'" if @title=="Beneficios" %>>
 						<a href="/beneficios">Beneficios</a>
-					</li>
-		            <li <%= "class='active'" if @title=="Avance" %>>
-						<a href="/avance">Avance</a>
 					</li>
 					<li <%= "class='active'" if @title=="Miembros" %>>
 						<a href="/miembros">Miembros</a>
@@ -67,7 +69,7 @@
 										Colonia Condesa <br/>
 									</p>
 								</dd>
-								<dt><a href='/evento'>Lean Startup Meetup</a></dt>
+								<dt><a href='/evento'>Open House</a></dt>
 								<dd>
 									<p>
 										Miércoles, X de Septiembre<br/>
@@ -84,7 +86,7 @@
 			
 			  </div> <!-- content -->	
 			  <footer>
-		        <p>&copy; coworkDF 2011 | info@coworkdf.com</p>
+		        <p>&copy; Launchpad 2011 | info@coworkdf.com</p>
 		      </footer>
 
 		    </div> <!-- /container -->		
